@@ -10,7 +10,7 @@ maxCounter = 5
 
 maxRange = int(input("enter the max of renge you want to gess ---> "))
 corectNumber = random.randint(0, maxRange)
-print(corectNumber)
+
 while counter != maxCounter :
     gessNumber = int(input("enter your Number ---> "))
     if gessNumber > corectNumber:
