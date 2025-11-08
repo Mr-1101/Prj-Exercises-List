@@ -1,18 +1,19 @@
 # variable ---------------------
 oddNumbers = []
 evenNumbers = []
-number = 0
 
 # main -----------------------
+enterNumber = input("plz enter the numbers like 12,15,18,... ---> ")
+sNumbers = enterNumber.split(",")
 
-while number != 100:
-    number = input("enter your number to make a list or send 100 to end ---> ")
-    if int(number) % 2 == 0:
-        oddNumbers.append(number)
-    elif int(number) % 2 != 0:
-        evenNumbers.append(number)
+numbers = [int(i) for i in sNumbers]
+print(numbers)
+for i in numbers:
+    if i % 2 == 0:
+        oddNumbers.append(i)
     else:
-        print("enter corect numbers")
-    
-print(f'you have {oddNumbers.len()} odd numbers list is --> {oddNumbers}')
-print(f'you have {evenNumbers.len()} even numbers list is --> {evenNumbers}')
+        evenNumbers.append(i)
+
+print(f'you have {len(oddNumbers)} odd numbers list is --> {oddNumbers}')
+print(f'you have {len(evenNumbers)} even numbers list is --> {evenNumbers}')
+print(type(oddNumbers))
