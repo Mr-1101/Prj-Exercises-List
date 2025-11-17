@@ -1,7 +1,7 @@
 import random
 
 # variable ----------------------------------
-maxPlay = 7
+
 
 getItem = ""
 result = ["rock","paper","scissors"]
@@ -12,7 +12,8 @@ def palying():
     winCounter = 0
     lossCounter = 0
     equal = 0
-    for i in range(0,maxPlay):
+    
+    while lossCounter < 3 and winCounter < 3:
         
         getItem = input("enter your chousess like this ----> rock ----> paper ---> scissors--->  ")
 
