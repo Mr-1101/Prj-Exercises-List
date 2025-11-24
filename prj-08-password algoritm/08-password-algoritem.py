@@ -40,4 +40,14 @@ def checkPassword():
 
 
 
+
+def makePass():
+    
+    print()
+
+
+
+
+
+
 checkPassword()
